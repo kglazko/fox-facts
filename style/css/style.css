@@ -1,0 +1,59 @@
+@import url('http://fonts.googleapis.com/css?family=Changa+One|Permanent+Marker');
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    color:white;
+}
+
+h3 {
+    color:black;
+    padding-left:10px;
+    display: inline;
+}
+
+label {
+    display: block;
+    padding-right:50px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 50px;
+    float: right;
+}
+
+button {
+    float: center;
+}
+
+#options {
+    text-align: left;
+    border-style: inset;
+    border-width:10px;
+}
+
+#buttons {
+    padding-top:10px;
+}
+
+#title {
+    background-color:orange;
+    padding-top:10px;
+    padding-bottom: 10px;
+    opacity:.8;
+    float:center;
+}
+
+.data {
+    color: black;
+    float:right;
+    padding-right:20px;
+}
+
+.box {
+    display:block;
+    padding-top: 10px;
+}
