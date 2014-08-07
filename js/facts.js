@@ -3,8 +3,13 @@
 window.onload = function() {
 
 	document.getElementById("build-id").innerHTML = navigator.buildID;
-	document.getElementById("gaia").innerHTML = navigator.gaia;
-	document.getElementById("memory").innerHTML = navigator.getFeature("hardware.memory");
+
+	//Memory
+	navigator.getFeature("hardware.memory").then(function(mem){
+		document.getElementById("memory").innerHTML = mem;
+		console.log(mem);
+	});
+	//document.getElementById("memory").innerHTML = obj["hardware.memory"];
 
 	//Going to use the Settings API to get stuff
 	var lock = navigator.mozSettings.createLock();
@@ -27,11 +32,10 @@ window.onload = function() {
 	}
 
 	//Gecko Version
-	var geckoRev = lock.get('deviceinfo.firmware_revision');
+	var geckoRev = lock.get('deviceinfo.hardware');
 	geckoRev.onsuccess = function() {
 		var json2 = JSON.stringify(geckoRev.result), obj2 = JSON.parse(json2);
-		console.log(obj2["deviceinfo.firmware_revision"]);
-		document.getElementById("gecko").innerHTML = obj2["deviceinfo.firmware_revision"];
+		document.getElementById("gecko").innerHTML = obj2["deviceinfo.hardware"];
 	}
 
 	geckoRev.onerror = function () {

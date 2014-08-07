@@ -1,11 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Changa+One|Permanent+Marker');
 
 body {
-    width: 100%;
+    width: 95%;
     height: 100%;
     overflow: hidden;
     text-align: center;
     color:white;
+    padding-right:10px;
 }
 
 h3 {
@@ -33,6 +34,11 @@ button {
     text-align: left;
     border-style: inset;
     border-width:10px;
+    border-bottom-width: 10px;
+    border-bottom-color: black;
+    border-right-width: 10px;
+    border-right-color: black;
+    padding-bottom:120px;
 }
 
 #buttons {
@@ -55,5 +61,6 @@ button {
 
 .box {
     display:block;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top:20px;
 }

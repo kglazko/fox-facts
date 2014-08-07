@@ -9,7 +9,8 @@
   },
     "permissions": {
     "settings":{ "access": "readwrite" },
-    "mobilenetwork": {"description": "To detect mobile carrier and regional information."}
+    "mobilenetwork": {"description": "To detect mobile carrier and regional information."},
+    "feature-detection":{ "app": "DENY_ACTION", "privileged": "ALLOW_ACTION", "certified": "ALLOW_ACTION" }
   },
   "default_locale": "en-US",
   "icons": {
