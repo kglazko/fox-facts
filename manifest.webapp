@@ -1,7 +1,7 @@
 {
   "name": "Fox Facts",
   "description": "Displays information about your device and build in a compact location. Great for those who plan to contribute to FxOS and report bugs to bugzilla.",
-  "type": "priviledged",
+  "type": "privileged",
   "launch_path": "/index.html",
   "developer": {
     "name": "Kate Glazko",
